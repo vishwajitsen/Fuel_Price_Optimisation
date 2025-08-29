@@ -1,0 +1,40 @@
+{
+  "recommended_price": 95.45,
+  "best_price_raw": 96.68,
+  "pred_volume": 14561.77311065511,
+  "expected_profit": 140957.96371114155,
+  "today": {
+    "date": "2024-12-31",
+    "yesterday_price": 94.45,
+    "cost": 85.77,
+    "comp_mean": 95.30666666666667
+  },
+  "model_metrics": {
+    "train": {
+      "mae": 201.6772745401967,
+      "rmse": 256.86671781907984,
+      "r2": 0.9185674533763454,
+      "mape_pct": 1.4459215101570346
+    },
+    "test": {
+      "mae": 566.8365708178517,
+      "rmse": 733.49718992308,
+      "r2": 0.35511705875675437,
+      "mape_pct": 4.049778116736762
+    }
+  },
+  "selected_features": [
+    "dow",
+    "price_gap_mean",
+    "volume_roll7",
+    "volume_lag7",
+    "margin",
+    "price_gap_mean_lag1",
+    "dayofyear",
+    "price_lag7",
+    "price_lag1",
+    "cost",
+    "comp_spread",
+    "price_roll7"
+  ]
+}
