@@ -1,26 +1,5 @@
 #!/usr/bin/env python3
-"""
-ml_price_optimizer_ga.py
 
-Full pipeline for Fuel Price Optimization using a Genetic Algorithm to maximize
-profit = (price - cost) * predicted_volume, with an R²-based generalization
-regularizer baked into the GA fitness.
-
-- Loads historical data (Excel/CSV) and today's JSON
-- Builds features (calendar, competitor aggregates, margin, lags)
-- Performs feature selection
-- Trains a demand model (GradientBoosting or XGBoost)
-- Computes cross-validated R² (TimeSeriesSplit) as a measure of generalization
-- Runs a Genetic Algorithm to search the continuous price space for the price
-  that yields maximum expected profit *and* better generalization
-- Saves Excel, PNG plots, recommendation JSON, and CSVs
-
-Usage example:
-python ml_price_optimizer_ga.py --data data/oil_retail_history.xlsx --today data/today_example.json --out outputs --model gbr --pop 120 --gens 80
-
-Author: ChatGPT
-Date: 2025
-"""
 import argparse
 import json
 import os
