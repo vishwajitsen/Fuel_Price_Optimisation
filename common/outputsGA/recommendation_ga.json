@@ -1,8 +1,8 @@
 {
   "recommended_price": 95.45,
   "best_price_raw": 96.68,
-  "pred_volume": 14561.77311065511,
-  "expected_profit": 140957.96371114155,
+  "pred_volume": 14381,
+  "expected_profit": 139212.34,
   "today": {
     "date": "2024-12-31",
     "yesterday_price": 94.45,
